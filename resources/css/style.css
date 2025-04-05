@@ -1,0 +1,78 @@
+.body-bg{
+    /* background-color: orange !important; */
+    background: linear-gradient(90deg, rgba(255,135,0,1) 9%, rgba(247,189,0,1) 49%, rgba(255,135,0,1) 100%);
+}
+
+.height-custom{
+    min-height: 60vh;
+}
+
+.text-custom{
+    color: orange !important;
+}
+
+.mt-custom{
+    margin-top: 200px;
+}
+
+.ms-custom{
+    margin-left: 100px;
+}
+
+.dropdown-menu {
+    min-width: 1rem !important;
+    margin-left: 75px !important;
+}
+
+.custom-btn:hover{
+    background-color: rgba(255, 166, 0, 0.433) !important;
+}
+
+.custom-placeholder::placeholder {
+    color: orange !important;
+}
+
+.form-control::file-selector-button{
+    background-color: orange !important;
+}
+
+.img-preview{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    width: 120px;
+}
+
+.card-w{
+    width: 250px;
+}
+
+.card-body-bg{
+    background: linear-gradient(0deg, rgba(253,187,45,1) 29%, rgba(253,221,45,1) 99%);
+}
+
+.custom-carousel {
+    max-width: 350px; 
+    margin: auto;     
+}
+
+.custom-carousel .carousel-item img {
+    max-height: 300px; 
+    object-fit: cover; 
+}
+
+.carousel-text{
+    background-color: rgba(0, 0, 0, 0.533);
+}
+
+.btn-outline-custom{
+    color: rgb(89, 220, 89) !important;
+    border: solid 1px !important;
+}
+
+.btn-outline-custom:hover{
+    color: black !important;
+    background-color: rgb(89, 220, 89) !important;
+    border: solid 1px rgb(89, 220, 89) !important;
+}
