@@ -19,6 +19,10 @@
     margin-left: 100px;
 }
 
+.li-custom{
+    list-style-type: none;
+}
+
 .dropdown-menu {
     min-width: 1rem !important;
     margin-left: 75px !important;
@@ -105,4 +109,107 @@
     border: solid 1px gray !important;
     color: black !important;
     /* color: whitesmoke !important; */
+}
+
+
+/* Pagina About Us */
+
+.circle{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 89, 12) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.opener{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 2px solid orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 3;
+    background-color: orange;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.moved{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 2px solid red;
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    z-index: 2;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.vh-custom{
+    height: 75vh;
+}
+
+.flip-card{
+    height: 400px;
+    width: 405px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card:hover > .inner{
+    transform: rotateY(180deg);
+}
+
+.inner{
+    height: 404px;
+    width: 405px;
+    border: 2px solid red;
+    border-radius: 20px;
+    position: relative;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+}
+
+.inner-face{
+    height: 400px;
+    width: 400px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+
+.inner-back{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    text-align: center;
+    padding: 15px;
+}
+
+.fs-80{
+    font-size: 80px;
+}
+
+.fs-30{
+    font-size: 30px;
+}
+
+.fa-mt-custom{
+    margin-top: 110px;
 }

@@ -23,4 +23,10 @@ class PublicController extends Controller
         return redirect()->back();
     }
 
+    public function aboutUs()
+    {
+        
+        return view('about-us');
+    }    
+
 }

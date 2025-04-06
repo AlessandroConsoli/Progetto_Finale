@@ -19,7 +19,8 @@ return[
     'motori' => 'Motors',
     'salute e bellezza' => 'Health & Beauty',
     'sport' => 'Sport',
-    'recentArticles' => 'Recent articles'
+    'recentArticles' => 'Recent articles',
+    'about-us' => 'About us'
 
 
 ];

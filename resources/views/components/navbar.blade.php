@@ -1,19 +1,19 @@
 <nav class="shadow navbar fixed-top navbar-expand-lg bg-body-tertiary border-bottom border-body" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Presto.it</a>
+    <a class="navbar-brand" href="{{route('about-us')}}">Presto.it</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{route('homepage')}}">{{__('ui.homepage')}}</a>
+          <a class="nav-link active text-warning" aria-current="page" href="{{route('homepage')}}">{{__('ui.homepage')}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{route('article.index')}}">{{__('ui.allArticles')}}</a>
+          <a class="nav-link active text-warning" aria-current="page" href="{{route('article.index')}}">{{__('ui.allArticles')}}</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle active text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             {{__('ui.browseCategories')}}
           </a>
           <ul class="dropdown-menu">
@@ -72,6 +72,9 @@
         <a class="nav-link dropdown-toggle text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           {{__('ui.changeLang')}}
         </a>
+        <li class="nav-item text-warning ms-auto li-custom">
+          <a class="nav-link active" aria-current="page" href="{{route('about-us')}}">{{__('ui.about-us')}}</a>
+        </li>
         <ul class="dropdown-menu">
           <li><x-_locale lang="it" /></li>
           <li><x-_locale lang="en" /></li>
@@ -82,6 +85,7 @@
         <input class="form-control me-2 text-warning custom-placeholder" name="query" type="search" placeholder="{{__('ui.searchArticle')}}" aria-label="Search">
         <button class="btn btn-outline-warning" type="submit">{{__('ui.search')}}</button>
       </form>
+      
     </div>
   </div>
 </nav>
