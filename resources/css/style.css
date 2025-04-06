@@ -1,6 +1,6 @@
 .body-bg{
     /* background-color: orange !important; */
-    background: linear-gradient(90deg, rgba(255,135,0,1) 9%, rgba(247,189,0,1) 49%, rgba(255,135,0,1) 100%);
+    background: linear-gradient(90deg, rgba(255,135,0,1) 9%, rgba(247,189,0,1) 49%, rgba(255,135,0,1) 100%) !important;
 }
 
 .height-custom{
@@ -32,8 +32,13 @@
     color: orange !important;
 }
 
-.form-control::file-selector-button{
-    background-color: orange !important;
+
+.form-select {
+	background: orange !important;
+}
+
+::file-selector-button {
+	background: orange !important;
 }
 
 .img-preview{
@@ -75,4 +80,29 @@
     color: black !important;
     background-color: rgb(89, 220, 89) !important;
     border: solid 1px rgb(89, 220, 89) !important;
+}
+
+.btn-outline-custom-2{
+    color: gray;
+    border: solid 1px !important;
+    background: linear-gradient(0deg, rgb(255, 178, 12) 29%, rgb(255, 219, 14) 99%) !important;
+}
+
+.btn-outline-custom-2:hover{
+    background: linear-gradient(0deg, rgba(253,187,45,1) 29%, rgba(253,221,45,1) 99%) !important;
+    border: solid 1px gray !important;
+    /* color: whitesmoke !important; */
+}
+
+.btn-outline-custom-3{
+    color: whitesmoke !important;
+    border: solid 1px black !important;
+    background: linear-gradient(0deg, rgb(255, 36, 36) 29%, rgb(251, 184, 40) 99%) !important;
+}
+
+.btn-outline-custom-3:hover{
+    background: linear-gradient(0deg, rgb(255, 89, 12) 29%, rgb(222, 181, 0) 99%) !important;
+    border: solid 1px gray !important;
+    color: black !important;
+    /* color: whitesmoke !important; */
 }

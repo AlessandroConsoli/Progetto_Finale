@@ -1,11 +1,11 @@
 <x-layout>
     <div class="container-fluid text-center bg-body-tertiary">
-        <div class="row vh-100 body-bg justify-content-center align-items-center">
+        <div class="row body-bg justify-content-center align-items-center">
             <div class="col-12">
-                <h1 class="display-1">Archivio articoli</h1>
+                <h1 class="display-1  mt-custom">Archivio articoli</h1>
                 <div class="my-5">
                     @auth
-                        <a class="btn btn-dark" href="{{route('article.create')}}">Inserisci un articolo</a>
+                        <a class="btn btn-outline-custom-2 btn-rounded" href="{{route('article.create')}}">Inserisci un articolo</a>
                     @endauth
                 </div>
             </div>

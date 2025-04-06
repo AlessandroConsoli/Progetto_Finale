@@ -3,6 +3,11 @@
     <div class="row vh-80 body-bg justify-content-center align-items-center">
       <div class="col-12">
         <h1 class="display-1 mt-custom">Dettagli dell'articolo</h1>
+        @if (session()->has('success'))
+          <div class="alert alert-success">
+            {{ session('success') }}
+          </div>
+        @endif
         <div class="my-5">
         </div>
       </div>
@@ -47,7 +52,7 @@
       @endif
     </div>    
     <div class="col-12 col-md-6 height-custom text-center d-flex align-items-center justify-content-center">
-      <div class="col-6">
+      <div class="col-6 border border-dark body-bg">
         <h2 class="my-5">{{$article->title}}</h2>
         <h6 class="my-5 text-center">{{$article->description}}</h4>
           <h5 class="my-5">Prezzo: {{$article->price}}€</h3>
@@ -57,9 +62,15 @@
         @auth
           @if (Auth::user()->is_revisor)
             <div class= "d-flex justify-content-center mb-2">
+              <a class="btn btn-outline-custom-2" href="{{ route('article.edit', $article->id) }}">Modifica l'articolo</a>
+            </div>
+            <div class= "d-flex justify-content-center mb-2">
               <livewire:article-delete :article="$article" />
             </div>
             @elseif (Auth::id() == $article->user->id)
+            <div class= "d-flex justify-content-center mb-2">
+              <a class="btn btn-outline-custom-2" href="{{ route('article.edit', $article->id) }}">Modifica l'articolo</a>
+            </div>
             <div class= "d-flex justify-content-center mb-2">
               <livewire:article-delete :article="$article" />
             </div>
@@ -77,7 +88,7 @@
         @endauth
         {{-- end pulsante delete --}}
         <div>
-          <a class="btn btn-dark" href="{{route('article.index')}}">Torna all'archivio articoli</a>
+          <a class="btn btn-outline-custom-2" href="{{route('article.index')}}">Torna all'archivio articoli</a>
         </div>
       </div>
     </div>

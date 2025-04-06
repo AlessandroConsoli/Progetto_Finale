@@ -1,10 +1,11 @@
 <?php
 
-use App\Http\Controllers\ArticleController;
-use App\Http\Controllers\PublicController;
-use App\Http\Controllers\RevisorController;
 use App\Models\Article;
+use App\Livewire\ArticleEdit;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PublicController;
+use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\RevisorController;
 
 Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
 //! Ricerca
@@ -17,7 +18,7 @@ Route::get('/article/create', [ArticleController::class, 'create'])->name('artic
 Route::get('/article/index', [ArticleController::class, 'index'])->name('article.index');
 Route::get('/article/show/{article}', [ArticleController::class, 'show'])->name('article.show');
 Route::get('/article/byCategory/{category}', [ArticleController::class, 'byCategory'])->name('article.byCategory');
-
+Route::get('/article/edit/{article}', ArticleEdit::class)->name('article.edit')->middleware('auth');
 //! RevisorController
 Route::get('/revisor/index', [RevisorController::class, 'index'])->name('revisor.index')->middleware('isRevisor');
 Route::patch('/accept/{article}', [RevisorController::class, 'accept'])->name('accept')->middleware('isRevisor');

@@ -21,6 +21,11 @@ class ArticleController extends Controller
         return view('article.show', compact('article'));
     }
 
+    // public function edit(Article $article)
+    // {
+    //     return view('livewire.article-edit', ['article' => $article]);
+    // }
+
     public function byCategory(Category $category){
         $articles = $category->articles->where('is_accepted', true);
         return view('article.byCategory', compact('articles', 'category'));

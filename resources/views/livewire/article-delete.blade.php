@@ -1,1 +1,1 @@
-<button wire:click="deleteArticle" class="btn btn-danger">Elimina l'articolo</button>
+<button wire:click="deleteArticle" class="btn btn-outline-custom-3">Elimina l'articolo</button>
