@@ -29,7 +29,7 @@
         <div class="carousel-inner">
           @foreach ($article->images as $key => $image)
           <div class="carousel-item @if ($loop->first) active @endif">
-            <img src="{{ $image->getUrl(300, 300) }}" class="d-block w-100 rounded shadow" alt="Immagine {{$key + 1}} dell'articolo {{$article->title}}">
+            <img src="{{ Storage::url($image->path) }}" class="d-block w-100 rounded shadow" alt="Immagine {{$key + 1}} dell'articolo {{$article->title}}">
             <div class="carousel-caption d-none d-md-block carousel-text">
               <h5>Immagine {{$key + 1}}</h5>
             </div>
@@ -48,7 +48,7 @@
         @endif
       </div>
       @else
-      <img src="https://ps.w.org/replace-broken-images/assets/icon-256x256.png?rev=2561727" alt="Nessuna immagine inserita">
+      <img src="\img\default-no-image.jpg" alt="Nessuna immagine inserita">
       @endif
     </div>    
     <div class="col-12 col-md-6 height-custom text-center d-flex align-items-center justify-content-center">

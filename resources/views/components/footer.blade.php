@@ -3,7 +3,7 @@
     <!-- Footer -->
     <footer
     class="text-center text-lg-start text-white"
-    style="background-color: #3e4551"
+    style="background-color: rgb(80, 78, 70)"
     >
     <!-- Grid container -->
     <div class="container p-4 pb-0">
@@ -145,8 +145,16 @@
 
         @else
             
-        <section class="">
-            <p class="d-flex justify-content-center align-items-center">
+        <section class="container d-flex justify-content-center">
+            <div class="row col-12 d-flex justify-content-center align-items-center text-center">
+                    <div class="col-12 col-md-3 text-warning">Vuoi creare un account?</div>
+                    <div href="{{route('register')}}" class="col-12 col-md-3 btn btn-outline-custom btn-rounded">Clicca qui!</div>
+                    <div class="col-12 col-md-3 text-warning mt-login-button-footer">Sei già registrato?</div>
+                    <div a href="{{route('login')}}" class="col-12 col-md-3 btn btn-outline-primary btn-rounded">Clicca qui!</div>
+                </div>
+            </div>
+
+            {{-- <p class="d-flex justify-content-center align-items-center">
                 <span class="me-3 text-warning">Vuoi creare un account?</span>
                 <a href="{{route('register')}}" class="btn btn-outline-custom btn-rounded">
                     Clicca qui!
@@ -158,7 +166,7 @@
                     Effettua il Login!
                 </a>
             </span>
-            </p>
+            </p> --}}
         </section>
         @endauth
         

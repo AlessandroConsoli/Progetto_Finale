@@ -78,7 +78,8 @@
                         @else
                             {{-- @for ($i = 0; $i < 6; $i++) --}}
                                 <div class="col-6 col-md-4 mb-4 text-center">
-                                    <img src="https://ps.w.org/replace-broken-images/assets/icon-256x256.png?rev=2561727" class="img-fluid rounded shadow" alt="img Segnaposto">
+                                    <img src="\img\default-no-image.jpg" class="img-fluid rounded shadow" alt="img Segnaposto">
+                                    <h4>Nessuna immagine inserita</h6>
                                 </div>
                             {{-- @endfor --}}
                         @endif

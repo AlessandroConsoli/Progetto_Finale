@@ -72,14 +72,14 @@
         <a class="nav-link dropdown-toggle text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           {{__('ui.changeLang')}}
         </a>
-        <li class="nav-item text-warning ms-auto li-custom">
-          <a class="nav-link active" aria-current="page" href="{{route('about-us')}}">{{__('ui.about-us')}}</a>
-        </li>
         <ul class="dropdown-menu">
           <li><x-_locale lang="it" /></li>
           <li><x-_locale lang="en" /></li>
           <li><x-_locale lang="es" /></li>
         </ul>
+      </li>      
+      <li class="nav-item text-warning ms-auto li-custom">
+        <a class="nav-link active" aria-current="page" href="{{route('about-us')}}">{{__('ui.about-us')}}</a>
       </li>     
       <form class="d-flex ms-auto" role="search" action="{{route('article.search')}}" method="GET">
         <input class="form-control me-2 text-warning custom-placeholder" name="query" type="search" placeholder="{{__('ui.searchArticle')}}" aria-label="Search">
