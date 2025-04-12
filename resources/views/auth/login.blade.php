@@ -24,6 +24,9 @@
                     </div>
                 </form>
             </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <img src="/img/image_1.jpg" alt="fashion style girl" class="login-girls-img img-fluid">
+            </div>
         </div>
     </div>    
 </x-layout>

@@ -1,8 +1,8 @@
-<x-layout>
+<x-layout2>
     <x-navbar />
 
+    <h1 class="text-center mt-custom text-custom text-shadow fw-bold">Chi siamo</h1>
     <div class="container my-5">
-        <h1 class="text-center mt-custom">Chi siamo</h1>
 
         <!-- Sezione team -->
         <section class="container-fluid">
@@ -28,4 +28,4 @@
 
     <!-- Includi lo script JS che contiene la logica del vecchio progetto -->
     {{-- <script src="{{ asset('js/aboutUs.js') }}"></script> --}}
-</x-layout>
+</x-layout2>

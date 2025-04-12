@@ -2,10 +2,10 @@ let opener = document.querySelector('.opener');
 let circle = document.querySelector('.circle');
 
 let teachers = [
-    {name: 'Daniel', description: 'Singer and guitarist', url: 'https://picsum.photos/301'},
-    {name: 'Manuel', description: 'Bass Player', url: 'https://picsum.photos/302'},
-    {name: 'Johan', description: 'Lead Guitarist', url: 'https://picsum.photos/303'},
-    {name: 'Leo', description: 'Drummer', url: 'https://picsum.photos/304'},
+    {name: 'John Smith', description: 'Digital Marketing Manager', url: '/img/person_1.jpg'},
+    {name: 'Manuel Gilmore', description: 'Project Manager', url: '/img/person_2.jpg'},
+    {name: 'Johan Alson', description: 'Social Media Manager', url: '/img/person_3.jpg'},
+    {name: 'Leo Scardina', description: 'Product Manager', url: '/img/person_4.jpg'},
 ];
 
 teachers.forEach( (docente)=>{

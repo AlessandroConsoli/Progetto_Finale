@@ -1,4 +1,4 @@
-<div class="card mx-auto card-w shadow text-center mb-3 border-3 border-warning">
+<div class="card mx-auto card-w shadow text-center mb-5 border-3 card-border-custom">
     <img src="{{$article->images->isNotEmpty() ? $article->images->first()->getUrl(300, 300) : '\img\default-no-image.jpg'}}" class="card-img-top" alt="Immagine dell'articolo {{$article->title}}">
     <div class="card-body card-body-bg">
         <h4 class="card-title">{{$article->title}}</h4>

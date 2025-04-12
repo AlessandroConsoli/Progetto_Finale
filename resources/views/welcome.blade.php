@@ -16,7 +16,7 @@
                     <img src="/img/bg_1.png" alt="fashion style girl" class="header-girl-img">
                 </div>
                 <div class="col-5">
-                    <h1 class="display-1 text-white text-shadow">Presto.it</h1>
+                    <h1 class="header-h1-custom text-white text-shadow">Presto.it</h1>
                     @auth
                         <a class="btn btn-header-custom" href="{{route('article.create')}}">Pubblica un articolo</a>
                     @endauth

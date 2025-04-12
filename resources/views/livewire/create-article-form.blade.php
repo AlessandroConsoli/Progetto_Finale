@@ -1,4 +1,4 @@
-<form class="bg-warning shadow rounded p-5 my-5" wire:submit="store">
+<form class="shadow rounded p-5 my-5 create-form-body-bg" wire:submit="store">
     @if (session()->has('success'))
         <div class="alert alert-success text-center">
             {{session('success')}}

@@ -9,7 +9,7 @@
         </div>
         <div class="row justify-content-center align-items-center height-custom">
             <div class="col-12 col-md-6">
-                <form method="POST" action="{{route('register')}}" class="shadow rounded-2 p-5">
+                <form method="POST" action="{{route('register')}}" class="shadow rounded-2 p-5 bg-register">
                     @csrf
                     <div class="mb-3">
                         <label for="name" class="form-label">Nome:</label>
@@ -31,6 +31,9 @@
                         <button type="submit" class="btn btn-dark">Registrati</button>
                     </div>
                 </form>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <img src="/img/choose-1.jpg" alt="fashion style girl" class="register-img img-fluid">
             </div>
         </div>
     </div>    

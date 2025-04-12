@@ -8,17 +8,19 @@
     <!-- Grid container -->
     <div class="container p-4 pb-0">
         <!-- Section: Links -->
-        <section class="">
+        <section class="container">
             <!--Grid row-->
-            <div class="row">
+            <div class="row justify-content-center">
                 <!--Grid column-->
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Alcuni dei nostri partners</h5>
+                <div class="col-12 mb-4 mb-md-0 d-flex justify-content-center">
+                    <h5 class="text-uppercase mb-5">Alcuni dei nostri partners</h5>
                 </div>
+            </div>
                 <!--Grid column-->
                 
                 <!--Grid column-->
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <div class="row justify-content-center text-center">
+                <div class="col-6 col-md-3 mb-4">
                     <h5 class="text-uppercase">Microsoft</h5>
                     
                     <ul class="list-unstyled mb-0">
@@ -30,7 +32,7 @@
                 <!--Grid column-->
                 
                 <!--Grid column-->
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                <div class="col-6 col-md-3 mb-4">
                     <h5 class="text-uppercase">Apple</h5>
                     
                     <ul class="list-unstyled mb-0">
@@ -42,7 +44,7 @@
                 <!--Grid column-->
                 
                 <!--Grid column-->
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                <div class="col-6 col-md-3 mb-4">
                     <h5 class="text-uppercase">Sony</h5>
                     
                     <ul class="list-unstyled mb-0">
@@ -54,7 +56,7 @@
                 <!--Grid column-->
                 
                 <!--Grid column-->
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                <div class="col-6 col-md-3 mb-4">
                     <h5 class="text-uppercase">Nintendo</h5>
                     
                     <ul class="list-unstyled mb-0">
@@ -64,13 +66,13 @@
                     </ul>
                 </div>
                 <!--Grid column-->
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                {{-- <div class="col-lg-4 col-6 col-md-3 mb-4">
                     <h5 class="text-uppercase"> </h5>
-                </div>
+                </div> --}}
                 <!--Grid column-->
                 
                 <!--Grid column-->
-                <div class="col-lg-2 col-md-6 my-4 mb-md-0">
+                <div class="col-6 col-md-3 my-4">
                     <h5 class="text-uppercase">Adidas</h5>
                     
                     <ul class="list-unstyled mb-0">
@@ -82,7 +84,7 @@
                 <!--Grid column-->
                 
                 <!--Grid column-->
-                <div class="col-lg-2 col-md-6 my-4 mb-md-0">
+                <div class="col-6 col-md-3 my-4">
                     <h5 class="text-uppercase">H&M</h5>
                     
                     <ul class="list-unstyled mb-0">
@@ -94,7 +96,7 @@
                 <!--Grid column-->
                 
                 <!--Grid column-->
-                <div class="col-lg-2 col-md-6 my-4 mb-md-0">
+                <div class="col-6 col-md-3 my-4">
                     <h5 class="text-uppercase">Levi's</h5>
                     
                     <ul class="list-unstyled mb-0">
@@ -106,7 +108,7 @@
                 <!--Grid column-->
                 
                 <!--Grid column-->
-                <div class="col-lg-2 col-md-6 my-4 mb-md-0">
+                <div class="col-6 col-md-3 my-4">
                     <h5 class="text-uppercase">Nike</h5>
                     
                     <ul class="list-unstyled mb-0">
@@ -148,25 +150,11 @@
         <section class="container d-flex justify-content-center">
             <div class="row col-12 d-flex justify-content-center align-items-center text-center">
                     <div class="col-12 col-md-3 text-warning">Vuoi creare un account?</div>
-                    <div href="{{route('register')}}" class="col-12 col-md-3 btn btn-outline-custom btn-rounded">Clicca qui!</div>
+                    <div href="{{route('register')}}" class="col-12 col-md-3 btn btn-outline-custom btn-rounded btn-width-footer">Clicca qui!</div>
                     <div class="col-12 col-md-3 text-warning mt-login-button-footer">Sei già registrato?</div>
-                    <div a href="{{route('login')}}" class="col-12 col-md-3 btn btn-outline-primary btn-rounded">Clicca qui!</div>
+                    <div a href="{{route('login')}}" class="col-12 col-md-3 btn btn-outline-primary btn-rounded btn-width-footer">Clicca qui!</div>
                 </div>
             </div>
-
-            {{-- <p class="d-flex justify-content-center align-items-center">
-                <span class="me-3 text-warning">Vuoi creare un account?</span>
-                <a href="{{route('register')}}" class="btn btn-outline-custom btn-rounded">
-                    Clicca qui!
-                </a>
-            
-            <span class="d-flex justify-content-center align-items-center mx-5">
-                <span class="me-3 text-warning">Sei già registrato?</span>
-                <a href="{{route('login')}}" class="btn btn-outline-primary btn-rounded">
-                    Effettua il Login!
-                </a>
-            </span>
-            </p> --}}
         </section>
         @endauth
         

@@ -7,10 +7,10 @@
     <title>Presto.it</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="body-bg">
+<body class="aboutUs-bg">
     <x-navbar/>
 
-    <div class="min-vh-100">
+    <div class="Custom-layout2-height">
         {{$slot}}
     </div>
 
