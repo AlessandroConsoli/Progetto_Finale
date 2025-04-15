@@ -13,7 +13,7 @@
             <div class="row justify-content-center">
                 <!--Grid column-->
                 <div class="col-12 mb-4 mb-md-0 d-flex justify-content-center">
-                    <h5 class="text-uppercase mb-5">Alcuni dei nostri partners</h5>
+                    <h5 class="text-uppercase mb-5">{{__('ui.partners')}}</h5>
                 </div>
             </div>
                 <!--Grid column-->
@@ -130,10 +130,10 @@
         @auth
         <section class="">
             <p class="d-flex justify-content-center align-items-center">
-                <span class="me-3 text-warning">Vuoi disconnetterti?</span>
+                <span class="me-3 text-warning">{{__('ui.toLogout')}}</span>
                 <a href="{{route('logout')}}" class="btn btn-success btn-rounded"
                 onclick="event.preventDefault(); document.getElementById('form-logout').submit();"
-                >Clicca qui</a>
+                >{{__('ui.clickHere')}}</a>
                 <form 
                 action="{{route('logout')}}"
                 method="POST"
@@ -149,10 +149,10 @@
             
         <section class="container d-flex justify-content-center">
             <div class="row col-12 d-flex justify-content-center align-items-center text-center">
-                    <div class="col-12 col-md-3 text-warning">Vuoi creare un account?</div>
-                    <div href="{{route('register')}}" class="col-12 col-md-3 btn btn-outline-custom btn-rounded btn-width-footer">Clicca qui!</div>
-                    <div class="col-12 col-md-3 text-warning mt-login-button-footer">Sei già registrato?</div>
-                    <div a href="{{route('login')}}" class="col-12 col-md-3 btn btn-outline-primary btn-rounded btn-width-footer">Clicca qui!</div>
+                    <div class="col-12 col-md-3 text-warning">{{__('ui.accountRegister')}}</div>
+                    <div href="{{route('register')}}" class="col-12 col-md-3 btn btn-outline-custom btn-rounded btn-width-footer">{{__('ui.clickHere')}}</div>
+                    <div class="col-12 col-md-3 text-warning mt-login-button-footer">{{__('ui.accountLogin')}}</div>
+                    <div a href="{{route('login')}}" class="col-12 col-md-3 btn btn-outline-primary btn-rounded btn-width-footer">{{__('ui.clickHere')}}</div>
                 </div>
             </div>
         </section>

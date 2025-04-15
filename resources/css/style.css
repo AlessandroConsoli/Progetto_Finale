@@ -122,6 +122,10 @@
     background-color: rgb(209, 237, 245);
 }
 
+.bg-recentArticles{
+    background-color: rgba(209, 237, 245, 0.938);
+}
+
 .vh-custom{
     max-height: 80vh;
 }

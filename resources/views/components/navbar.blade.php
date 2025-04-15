@@ -47,11 +47,11 @@
             </form>
           </li>
           <li>
-            <a href="{{route('article.create')}}" class="dropdown-item text-custom-dropdown">Crea un articolo</a>
+            <a href="{{route('article.create')}}" class="dropdown-item text-custom-dropdown">{{__('ui.createAnArticle')}}</a>
           </li>
           @if (Auth::user()->is_revisor)
           <li>
-            <a class="dropdown-item text-custom-dropdown" href="{{route('revisor.index')}}">{{\App\Models\Article::toBeRevisionedCount()}} da revisionare</a>
+            <a class="dropdown-item text-custom-dropdown" href="{{route('revisor.index')}}">{{\App\Models\Article::toBeRevisionedCount()}} {{__('ui.toCheck')}}</a>
           </li>
           @endif
         </ul>

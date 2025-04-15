@@ -3,7 +3,7 @@
         <div class="row justify-content-center">
             <div class="col-12 text-center">
                 <h1 class="display-4 pt-5">
-                    Registra un nuovo account
+                    {{__('ui.regNewAccount')}}
                 </h1>
             </div>
         </div>
@@ -12,23 +12,23 @@
                 <form method="POST" action="{{route('register')}}" class="shadow rounded-2 p-5 bg-register">
                     @csrf
                     <div class="mb-3">
-                        <label for="name" class="form-label">Nome:</label>
+                        <label for="name" class="form-label">{{__('ui.entName')}}</label>
                         <input type="text" class="form-control" id="name" name="name">
                     </div>
                     <div class="mb-3">
-                        <label for="registerEmail" class="form-label">Indirizzo email</label>
+                        <label for="registerEmail" class="form-label">{{__('ui.emailAddress')}}</label>
                         <input type="email" class="form-control" id="registerEmail" name="email">
                     </div>
                     <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
+                        <label for="password" class="form-label">{{__('ui.password')}}</label>
                         <input type="password" class="form-control" id="password" name="password">
                     </div>
                     <div class="mb-3">
-                        <label for="password_confirmation" class="form-label">Conferma la password</label>
+                        <label for="password_confirmation" class="form-label">{{__('ui.passwordConfirmation')}}</label>
                         <input type="password" class="form-control" id="password_confirmation" name="password_confirmation">
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn btn-dark">Registrati</button>
+                        <button type="submit" class="btn btn-dark">{{__('ui.register')}}</button>
                     </div>
                 </form>
             </div>

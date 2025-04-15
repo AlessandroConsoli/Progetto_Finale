@@ -3,7 +3,7 @@
         <div class="row justify-content-center">
             <div class="col-12 text-center">
                 <h1 class="display-5 header-h1-custom fw-bold text-white pt-5">
-                    Pubblica un articolo
+                    {{__('ui.createAnArticle')}}
                 </h1>
             </div>
         </div>

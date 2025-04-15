@@ -18,7 +18,7 @@
                 <div class="col-5">
                     <h1 class="header-h1-custom text-white text-shadow">Presto.it</h1>
                     @auth
-                        <a class="btn btn-header-custom" href="{{route('article.create')}}">Pubblica un articolo</a>
+                        <a class="btn btn-header-custom" href="{{route('article.create')}}">{{__('ui.createAnArticle')}}</a>
                     @endauth
                 </div>
                 <div class="col-3">
@@ -33,15 +33,15 @@
             <div class="col-12 col-md-3"></div>
             <div class="col-12 col-md-2">
                 <i class="fa-solid fa-5x fa-truck-fast custom-fa-icons"></i>
-                <p class="fw-bold">Free Shipping</p>
+                <p class="fw-bold">{{__('ui.shipping')}}</p>
             </div>
             <div class="col-12 col-md-2">
                 <i class="fa-solid fa-5x fa-headset custom-fa-icons"></i>
-                <p class="fw-bold">Support Customer</p>
+                <p class="fw-bold">{{__('ui.supportCustomer')}}</p>
             </div>
             <div class="col-12 col-md-2">
                 <i class="fa-solid fa-5x fa-credit-card custom-fa-icons"></i>
-                <p class="fw-bold">Secure Payments</p>
+                <p class="fw-bold">{{__('ui.securePayments')}}</p>
             </div>
             <div class="col-12 col-md-3"></div>            
         </section>
@@ -50,7 +50,7 @@
 
         <section class="row welcome-card-section-bg height-custom justify-content-center align-items-center py-5">
             <div>
-                <h2 class="my-5 recent-articles-h2 text-shadow text-white">{{__('ui.recentArticles')}}</h2>
+                <a class="my-5 recent-articles-h2 text-shadow text-light text-nowrap bg-recentArticles text-decoration-none">{{__('ui.recentArticles')}}</a>
             </div>
             @forelse ($articles as $article)
                 <div class="col-12 col-md-4">
@@ -59,7 +59,7 @@
             @empty
                 <div class="col-12">
                     <h3 class="text-center">
-                        Nessun articolo presente in archivio
+                        {{__('ui.noArticles')}}
                     </h3>
                 </div>
             @endforelse
