@@ -1,1 +1,1 @@
-<button wire:click="deleteArticle" class="btn btn-outline-custom-3">Elimina l'articolo</button>
+<button wire:click="deleteArticle" class="btn btn-outline-custom-3">{{__('ui.deleteArticle')}}</button>

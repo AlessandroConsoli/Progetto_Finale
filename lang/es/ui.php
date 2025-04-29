@@ -48,6 +48,47 @@ return[
     'photoPreview' => 'Vista previa de la foto:',
     'create' => 'Crear',
     'toCheck' => 'A comprobar',
+    'articleDetails' => "Detalles del artículo",
+    'image' => 'Imagen',
+    'noImage' => 'No se insertó ninguna imagen',
+    'accept' => 'Aceptar',
+    'refuse' => 'Rechazar',
+    'revDash' => 'Panel de control del Revisor',
+    'noRev' => 'No hay elementos para revisar',
+    'returnToHome' => 'Volver a la página de inicio',
+    'noArticle' => 'No hay artículos presentes en el archivo',
+    'editArticle' => "Editar el artículo",
+    'deleteArticle' => "Eliminar el artículo",
+    'becomeRev' => 'Quieres convertirte en revisor?',
+    'candidar' => 'Aplica aquí!',
+    'addNewImage' => 'Agregar nuevas imágenes',
+    'saveChanges' => 'Guardar cambios',
+    'cancel' => 'Cancelar',
+    'imagesAlreadyUploaded' => 'Imágenes ya subidas:',
+    'categoryArchive' => 'Archivo de categorías',
+    'author' => 'Autor',
+    'searchResults' => 'Resultados de tu búsqueda',
+    'noMatch' => 'No hay artículos que coincidan con tu búsqueda',
+    'requestRev' => 'Un usuario pidió trabajar con nosotros',
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

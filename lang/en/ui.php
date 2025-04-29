@@ -48,6 +48,43 @@ return[
     'photoPreview' => 'Photo preview:',
     'create' => 'Create',
     'toCheck' => 'To check',
+    'articleDetails' => "Article details",
+    'image' => 'Image',
+    'noImage' => 'No image inserted',
+    'accept' => 'Accept',
+    'refuse' => 'Refuse',
+    'revDash' => 'Revisor Dashboard',
+    'noRev' => 'No items to review',
+    'returnToHome' => 'Return to Homepage',
+    'noArticle' => 'No articles present in the archive',
+    'editArticle' => "Edit the article",
+    'deleteArticle' => "Delete the article",
+    'becomeRev' => 'Do you want to become a reviewer?',
+    'candidar' => 'Apply here!',
+    'addNewImage' => 'Add new images',
+    'saveChanges' => 'Save changes',
+    'cancel' => 'Cancel',
+    'imagesAlreadyUploaded' => 'Images already uploaded:',
+    'categoryArchive' => 'Category archive',
+    'author' => 'Author',
+    'searchResults' => 'Results of your search',
+    'noMatch' => 'No articles match your search',
+    'requestRev' => 'A user asked to work with us',
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+
 
 
 

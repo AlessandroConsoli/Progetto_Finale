@@ -1,7 +1,7 @@
 <x-layout2>
     <x-navbar />
 
-    <h1 class="text-center mt-custom text-custom text-shadow fw-bold">Chi siamo</h1>
+    <h1 class="text-center mt-custom text-custom text-shadow fw-bold">{{__('ui.about-us')}}</h1>
     <div class="container my-5">
 
         <!-- Sezione team -->
@@ -14,7 +14,7 @@
                             <i class="fa-solid fa-users-rays fa-6x"></i>
                         </div>
                         <div>
-                            <h6 class="fa-mt-custom">Clicca qui</h6>
+                            <h6 class="fa-mt-custom">{{__('ui.clickHere')}}</h6>
                         </div>
                     </div>
                 </div>

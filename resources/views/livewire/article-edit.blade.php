@@ -1,34 +1,34 @@
 <div class="container my-5">
-    <h1 class="text-center mt-custom">Modifica Articolo</h1>
+    <h1 class="text-center mt-custom">{{__('ui.editArticle')}}</h1>
     
     <form wire:submit.prevent="updateArticle">
 
         {{-- Titolo --}}
         <div class="mb-3">
-            <label class="form-label">Titolo</label>
+            <label class="form-label">{{__('ui.title')}}</label>
             <input type="text" class="form-control body-bg border border-2 border-dark rounded shadow" wire:model.defer="title">
             @error('title') <span class="text-danger">{{ $message }}</span> @enderror
         </div>
 
         {{-- Descrizione --}}
         <div class="mb-3">
-            <label class="form-label">Descrizione</label>
+            <label class="form-label">{{__('ui.description')}}</label>
             <textarea class="form-control body-bg border border-2 border-dark rounded shadow" wire:model.defer="description" rows="3"></textarea>
             @error('description') <span class="text-danger">{{ $message }}</span> @enderror
         </div>
 
         {{-- Prezzo --}}
         <div class="mb-3">
-            <label class="form-label">Prezzo</label>
+            <label class="form-label">{{__('ui.price')}}</label>
             <input type="number" step="0.01" class="form-control body-bg border border-2 border-dark rounded shadow" wire:model.defer="price">
             @error('price') <span class="text-danger">{{ $message }}</span> @enderror
         </div>
 
         {{-- Categoria --}}
         <div class="mb-3">
-            <label class="form-label">Categoria</label>
+            <label class="form-label">{{__('ui.title')}}</label>
             <select class="form-select body-bg border border-2 border-dark rounded shadow" wire:model.defer="category">
-                <option value="">Seleziona categoria</option>
+                <option value="">{{__('ui.selectCategory')}}</option>
                 @foreach($categories as $cat)
                     <option value="{{ $cat->id }}">{{ $cat->name }}</option>
                 @endforeach
@@ -38,7 +38,7 @@
 
         {{-- Upload nuove immagini --}}
         <div class="mb-3">
-            <label class="form-label">Aggiungi nuove immagini</label>
+            <label class="form-label">{{__('ui.addNewImage')}}</label>
             <input type="file" class="form-control body-bg border border-2 border-dark rounded shadow" wire:model="temporary_images" multiple>
             @error('temporary_images.*') <span class="text-danger">{{ $message }}</span> @enderror
         </div>
@@ -57,7 +57,7 @@
 
         {{-- Immagini esistenti --}}
         @if ($oldImages->count() > 0)
-            <h5>Immagini già caricate:</h5>
+            <h5>{{__('ui.imagesAlreadyUploaded')}}</h5>
             <div class="row">
                 @foreach ($oldImages as $img)
                     <div class="col-md-2 mb-2 position-relative">
@@ -69,8 +69,8 @@
         @endif
 
         <div class="mt-4 text-center">
-            <button type="submit" class="btn btn-success">Salva Modifiche</button>
-            <a href="{{ route('article.show', $article->id) }}" class="btn btn-secondary">Annulla</a>
+            <button type="submit" class="btn btn-success">{{__('ui.saveChanges')}}</button>
+            <a href="{{ route('article.show', $article->id) }}" class="btn btn-secondary">{{__('ui.cancel')}}</a>
         </div>
     </form>
 </div>

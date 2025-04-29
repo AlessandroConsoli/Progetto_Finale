@@ -2,11 +2,11 @@
     <div class="container-fluid text-center bg-body-tertiary">
         <div class="row vh-60 body-bg justify-content-center align-items-center">
             <div class="col-12">
-                <h1 class="display-1 mt-custom">Archivio categoria</h1>
-                <h2 class="display-2">" {{$category->name}} "</h2>
+                <h1 class="display-1 mt-custom">{{__('ui.categoryArchive')}}:</h1>
+                <h2 class="display-2">" {{__("ui.$category->name")}} "</h2>
                 <div class="mt-5">
                     @auth
-                        <a class="btn btn-dark" href="{{route('article.create')}}">Inserisci un articolo</a>
+                        <a class="btn btn-dark" href="{{route('article.create')}}">{{__('ui.createAnArticle')}}</a>
                     @endauth
                 </div>
             </div>
@@ -19,7 +19,7 @@
             @empty
                 <div class="col-12">
                     <h3 class="text-center">
-                        Nessun articolo presente in archivio
+                        {{__('ui.noArticles')}}
                     </h3>
                 </div>
             @endforelse

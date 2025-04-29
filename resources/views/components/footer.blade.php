@@ -167,9 +167,9 @@
         {{-- Altrimenti mostrami il tasto per diventare revisore --}}
                 <section class="">
                     <p class="d-flex justify-content-center align-items-center">
-                        <span class="me-3 text-warning">Vuoi diventare revisore?</span>
+                        <span class="me-3 text-warning">{{__('ui.becomeRev')}}</span>
                         <a href="{{ route('become.revisor') }}" class="btn btn-outline-warning btn-rounded">
-                            Candidati qui!
+                            {{__('ui.candidar')}}
                         </a>
                         </p>
                 </section>

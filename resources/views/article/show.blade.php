@@ -2,7 +2,7 @@
   <div class="container-fluid text-center bg-body-tertiary">
     <div class="row vh-80 body-bg justify-content-center align-items-center">
       <div class="col-12">
-        <h1 class="display-1 mt-custom">Dettagli dell'articolo</h1>
+        <h1 class="display-1 mt-custom">{{__('ui.articleDetails')}}</h1>
         @if (session()->has('success'))
           <div class="alert alert-success">
             {{ session('success') }}
@@ -31,7 +31,7 @@
           <div class="carousel-item @if ($loop->first) active @endif">
             <img src="{{ Storage::url($image->path) }}" class="d-block w-100 rounded shadow" alt="Immagine {{$key + 1}} dell'articolo {{$article->title}}">
             <div class="carousel-caption d-none d-md-block carousel-text">
-              <h5>Immagine {{$key + 1}}</h5>
+              <h5>{{__('ui.image')}} {{$key + 1}}</h5>
             </div>
           </div>
           @endforeach
@@ -48,28 +48,28 @@
         @endif
       </div>
       @else
-      <img src="\img\default-no-image.jpg" alt="Nessuna immagine inserita">
+      <img src="\img\default-no-image.jpg" alt="{{__('ui.noImage')}}">
       @endif
     </div>    
     <div class="col-12 col-md-6 height-custom text-center d-flex align-items-center justify-content-center">
       <div class="col-6 border border-dark body-bg">
         <h2 class="my-5">{{$article->title}}</h2>
-        <h6 class="my-5 text-center">{{$article->description}}</h4>
-          <h5 class="my-5">Prezzo: {{$article->price}}€</h3>
+        <h6 class="my-5 text-center description">{{$article->description}}</h6>
+          <h5 class="my-5">Prezzo: {{$article->price}}€</h5>
           </div>
         </div>
         {{-- pulsante delete (solo per revisori o per l'autore dell'articolo) --}}
         @auth
           @if (Auth::user()->is_revisor)
             <div class= "d-flex justify-content-center mb-2">
-              <a class="btn btn-outline-custom-2" href="{{ route('article.edit', $article->id) }}">Modifica l'articolo</a>
+              <a class="btn btn-outline-custom-2" href="{{ route('article.edit', $article->id) }}">{{__('ui.editArticle')}}</a>
             </div>
             <div class= "d-flex justify-content-center mb-2">
               <livewire:article-delete :article="$article" />
             </div>
             @elseif (Auth::id() == $article->user->id)
             <div class= "d-flex justify-content-center mb-2">
-              <a class="btn btn-outline-custom-2" href="{{ route('article.edit', $article->id) }}">Modifica l'articolo</a>
+              <a class="btn btn-outline-custom-2" href="{{ route('article.edit', $article->id) }}">{{__('ui.editArticle')}}</a>
             </div>
             <div class= "d-flex justify-content-center mb-2">
               <livewire:article-delete :article="$article" />
@@ -78,9 +78,9 @@
         {{-- Altrimenti mostrami il tasto per diventare revisore --}}
             <section class="">
               <p class="d-flex justify-content-center align-items-center">
-                <span class="me-3">Vuoi diventare revisore?</span>
+                <span class="me-3">{{__('ui.becomeRev')}}</span>
                 <a href="{{ route('become.revisor') }}" class="btn btn-success btn-rounded">
-                  Candidati qui!
+                  {{__('ui.candidar')}}
                 </a>
               </p>
             </section>
@@ -88,7 +88,7 @@
         @endauth
         {{-- end pulsante delete --}}
         <div>
-          <a class="btn btn-outline-custom-2" href="{{route('article.index')}}">Torna all'archivio articoli</a>
+          <a class="btn btn-outline-custom-2" href="{{route('article.index')}}">{{__('ui.allArticles')}}</a>
         </div>
       </div>
     </div>

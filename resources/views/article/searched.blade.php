@@ -2,10 +2,10 @@
     <div class="container-fluid text-center bg-body-tertiary">
         <div class="row body-bg justify-content-center align-items-center">
             <div class="col-12">
-                <h1 class="display-1 mt-5">Risultati della tua ricerca</h1>
+                <h1 class="display-1 mt-5">{{__('ui.searchResults')}}</h1>
                 <div class="my-5">
                     @auth
-                        <a class="btn btn-dark" href="{{route('article.create')}}">Inserisci un articolo</a>
+                        <a class="btn btn-dark" href="{{route('article.create')}}">{{__('ui.createAnArticle')}}</a>
                     @endauth
                 </div>
             </div>
@@ -18,7 +18,7 @@
             @empty
                 <div class="col-12">
                     <h3 class="text-center">
-                        Nessun articolo corrisponde alla tua ricerca
+                        {{__('ui.noMatch')}}
                     </h3>
                 </div>
             @endforelse
