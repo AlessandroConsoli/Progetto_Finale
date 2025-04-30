@@ -97,12 +97,12 @@
                         <form action="{{ route('reject', ['article' => $article_to_check]) }}" method="POST">
                             @csrf
                             @method('PATCH')
-                            <button class="btn btn-danger py-2 px-5 fw-bold">{{__('ui.refuse')}}</button>
+                            <button class="btn btn-danger ms-5 me-2 py-2 px-5 fw-bold">{{__('ui.refuse')}}</button>
                         </form>
                         <form action="{{ route('accept', ['article' => $article_to_check]) }}" method="POST">
                             @csrf
                             @method('PATCH')
-                            <button class="btn btn-success py-2 px-5 fw-bold">{{__('ui.accept')}}</button>
+                            <button class="btn btn-success me-5 py-2 px-5 fw-bold">{{__('ui.accept')}}</button>
                         </form>
                     </div>
                 </div>

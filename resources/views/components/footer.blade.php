@@ -131,7 +131,7 @@
         <section class="">
             <p class="d-flex justify-content-center align-items-center">
                 <span class="me-3 text-warning">{{__('ui.toLogout')}}</span>
-                <a href="{{route('logout')}}" class="btn btn-success btn-rounded"
+                <a href="{{route('logout')}}" class="btn btn-success btn-rounded btn-width-footer"
                 onclick="event.preventDefault(); document.getElementById('form-logout').submit();"
                 >{{__('ui.clickHere')}}</a>
                 <form 
@@ -150,9 +150,9 @@
         <section class="container d-flex justify-content-center">
             <div class="row col-12 d-flex justify-content-center align-items-center text-center">
                     <div class="col-12 col-md-3 text-warning">{{__('ui.accountRegister')}}</div>
-                    <div href="{{route('register')}}" class="col-12 col-md-3 btn btn-outline-custom btn-rounded btn-width-footer">{{__('ui.clickHere')}}</div>
+                    <a href="{{route('register')}}" class="col-12 col-md-3 btn btn-outline-custom btn-rounded btn-width-footer">{{__('ui.clickHere')}}</a>
                     <div class="col-12 col-md-3 text-warning mt-login-button-footer">{{__('ui.accountLogin')}}</div>
-                    <div a href="{{route('login')}}" class="col-12 col-md-3 btn btn-outline-primary btn-rounded btn-width-footer">{{__('ui.clickHere')}}</div>
+                    <a a href="{{route('login')}}" class="col-12 col-md-3 btn btn-outline-primary btn-rounded btn-width-footer">{{__('ui.clickHere')}}</a>
                 </div>
             </div>
         </section>
@@ -168,7 +168,7 @@
                 <section class="">
                     <p class="d-flex justify-content-center align-items-center">
                         <span class="me-3 text-warning">{{__('ui.becomeRev')}}</span>
-                        <a href="{{ route('become.revisor') }}" class="btn btn-outline-warning btn-rounded">
+                        <a href="{{ route('become.revisor') }}" class="btn btn-outline-warning btn-rounded btn-width-footer">
                             {{__('ui.candidar')}}
                         </a>
                         </p>
